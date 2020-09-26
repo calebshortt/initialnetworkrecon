@@ -6,7 +6,7 @@ A simple Linux script for initial network reconnaissance on a target network
 sudo ./01_enum_init_recon.sh <IP>
 ```
 
-# Notes
+# Behaviour
 The script runs four nmap scans in separate processes: 
 
 - Top 1000 TCP ports
@@ -15,6 +15,8 @@ The script runs four nmap scans in separate processes:
 - All UDP ports (Takes a VERY long time -- usually cancelled)
 
 If a host with port 53 (DNS) is discovered, the script will automatically attempt DNS enumeration against that host.
+
+A directory called inr_scans will automatically be created in the location that the script is executed to store the various nmap results.
 
 The banner contains the commands executed for the specific host so that the assessor can copy and paste them and modify them as needed.
 
