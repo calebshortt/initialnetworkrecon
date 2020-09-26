@@ -205,7 +205,7 @@ echo -e "        dns:     (if :53 found) DNS enumeration attempt of subnet"
 echo -e ""
 
 echo -e "${NC}"
-
+echo ""
 
 
 
